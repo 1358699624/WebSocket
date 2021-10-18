@@ -1,0 +1,17 @@
+[2021-10-18 17:07:10.7831][Info] Setup Success... 
+[2021-10-18 17:07:10.8489][Info] Start Success... 
+[2021-10-18 17:07:10.8489][Info] Server Listen at 1234 
+[2021-10-18 17:07:27.8173][Info] New Session Connected:479fae86-bd9e-48cb-8103-67135db64b76, Path:/, Host:localhost:1234, IP:127.0.0.1:57172 
+[2021-10-18 17:09:37.6484][Info] Receive:ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:39.7136][Info] Receive: ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:40.2661][Info] Receive: ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:43.3300][Info] Receive:ccc ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:44.9928][Info] Receive:ccc ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:46.1863][Info] Receive:cccc ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:47.3382][Info] Receive:cccc ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:48.5775][Info] Receive:ccccc ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:49.6656][Info] Receive:cccc ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:50.4339][Info] Receive: ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:51.1947][Info] Receive: ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:51.7856][Info] Receive:c ClientIP:127.0.0.1:57172 
+[2021-10-18 17:09:51.8006][Info] Session Close:ClientClosing, Path:/, IP:127.0.0.1:57172 

@@ -1,0 +1,15 @@
+2019-01-17 17:21:07.5938 Display Session Info:0
+2019-01-17 17:26:07.6188 Display Session Info:1
+2019-01-17 17:26:07.6188 ID:366b6ba5-7654-481a-bec8-f77dfcdec1ee, Remote:192.168.1.13:62360, Path:/%E7%BD%91%E9%A1%B5, LastActiveTime:2019/1/17 17:26:06, StartTime:2019/1/17 17:25:38
+2019-01-17 17:31:07.6237 Display Session Info:1
+2019-01-17 17:31:07.6257 ID:38905345-22b6-4f50-b27f-6723bae0c317, Remote:192.168.1.13:63415, Path:/%E7%BD%91%E9%A1%B5, LastActiveTime:2019/1/17 17:31:07, StartTime:2019/1/17 17:29:30
+2019-01-17 17:36:07.6313 Display Session Info:1
+2019-01-17 17:36:07.6313 ID:f0d20669-32b8-415d-84ca-fe40fadf1371, Remote:192.168.1.13:64600, Path:/%E7%BD%91%E9%A1%B5, LastActiveTime:2019/1/17 17:36:07, StartTime:2019/1/17 17:33:50
+2019-01-17 17:38:57.9780 Display Session Info:0
+2019-01-17 17:40:34.6399 Display Session Info:0
+2019-01-17 17:42:52.8275 Display Session Info:0
+2019-01-17 17:45:48.8493 Display Session Info:0
+2019-01-17 17:50:48.8632 Display Session Info:1
+2019-01-17 17:50:48.8632 ID:d76a6cdd-fc1f-4bcf-b134-815faca71d8d, Remote:192.168.1.13:61725, Path:/%E7%BD%91%E9%A1%B5, LastActiveTime:2019/1/17 17:50:48, StartTime:2019/1/17 17:46:16
+2019-01-17 17:54:16.1823 Display Session Info:0
+2019-01-17 17:55:02.4305 Display Session Info:0

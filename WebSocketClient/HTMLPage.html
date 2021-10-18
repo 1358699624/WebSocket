@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+<div id="onMessage" style="width:100%;height:200px;overflow-y:scroll;">
+
+</div>
+<input type="text" id="input" /><input id="sendMessage" type="button" value="发送" />
+</body>
+</html>
+<script>
+    //websocket 类
+    var myWS = function () {
+        this.ws = null;
+        this.url = null;
+        this.onmessage = function () { };
+        this.onopen = function () {
+        };
+        this.onclose = function () { };
+        this.onerror = function () {
+        };
+    };
+    myWS.prototype.sendMessage = function (message) {//客戶端發送消息到服務器方法
+        if (this.ws != null && this.ws.readyState == 1) {
+            this.ws.send(message);
+        }
+    };
+    myWS.prototype.start = function () {//啟動鏈接
+        this.connect();
+        this.conncheckstatus();
+        this.heartbeat();
+    };
+    //心跳
+    myWS.prototype.heartbeat = function () {
+        var obj = this;
+        setTimeout(function () {
+            if (obj.ws != null && obj.ws.readyState == 1) {
+                var message = "IsHere**";
+                obj.ws.send(message);
+            }
+            setTimeout(arguments.callee, 300000);
+        }, 10);
+    };
+    myWS.prototype.conncheckstatus = function () {
+        var obj = this;
+        setTimeout(function () {
+            if (obj.ws != null && obj.ws.readyState != 0 && obj.ws.readyState != 1) {
+                obj.connect();
+            }
+            setTimeout(arguments.callee, 5000);
+        }, 15);
+    };
+    myWS.prototype.connect = function () {
+        this.disconnect();
+        //WebSocket地址
+        if (this.url != null && this.url != "") {
+            try {
+                if ("WebSocket" in window) {
+                    this.ws = new WebSocket(this.url);
+                }
+                else if ("MozWebSocket" in window) {
+                    this.ws = new MozWebSocket(this.url);
+                }
+                else {
+                    alert("browser not support websocket");
+                }
+                if (this.ws != null) {
+                    var that = this;
+                    this.ws.onopen = function (event) { that.onopen(event); };
+                    this.ws.onmessage = function (event) { that.onmessage(event); };
+                    this.ws.onclose = function (event) { that.onclose(event); };
+                    this.ws.onerror = function (event) { that.onerror(event); };
+                }
+            }
+            catch (ex) {
+                console.log("connect:" + ex);
+            }
+        }
+    };
+    myWS.prototype.disconnect = function () {
+        if (this.ws != null) {
+            try {
+                this.ws.close();
+                this.ws = null;
+            }
+            catch (ex) {
+                this.ws = null;
+            }
+        }
+    };
+</script>
+
+<script>
+    var _ws = new myWS();
+    _ws.url = 'ws://192.168.1.13:1234/lcj网页';
+    //注册接收服务端消息的方法 服务端数据位于event.data字段
+    _ws.onmessage = (event) => {
+        document.getElementById('onMessage').innerHTML += event.data + '<br/>';
+        document.getElementById('onMessage').scrollTop = document.getElementById('onMessage').scrollHeight;
+    };
+    //启动链接
+    _ws.start();
+
+    document.getElementById('sendMessage').addEventListener('click', () => {
+        //客户端发送消息到服务端
+        _ws.sendMessage(document.getElementById('input').value);
+        document.getElementById('input').value = '';
+    });
+</script>

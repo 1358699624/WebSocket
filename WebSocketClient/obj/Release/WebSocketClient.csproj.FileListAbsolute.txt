@@ -1,0 +1,14 @@
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\bin\Release\NLog.config
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\bin\Release\WebSocketClient.exe.config
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\bin\Release\WebSocketClient.exe
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\bin\Release\WebSocketClient.pdb
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\bin\Release\NLog.dll
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\bin\Release\SuperSocket.ClientEngine.dll
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\bin\Release\WebSocket4Net.dll
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\bin\Release\NLog.xml
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\obj\Release\WebSocketClient.csproj.AssemblyReference.cache
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\obj\Release\WebSocketClient.csproj.SuggestedBindingRedirects.cache
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\obj\Release\WebSocketClient.csproj.CoreCompileInputs.cache
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\obj\Release\WebSocketClient.csproj.CopyComplete
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\obj\Release\WebSocketClient.exe
+E:\BaiduNetdiskDownload\WebSocketService\WebSocketClient\obj\Release\WebSocketClient.pdb
